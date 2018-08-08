@@ -1,7 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-  }
+
+  
   body {
     margin: auto;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -14,12 +12,7 @@
     border: #cccccc;
   }
 
-  #me,
-  #about,
-  #portfolio,
-  #contact {
-    float: left;
-  }
+ 
   #me {
     padding-right:  35%;
     padding-left: 19%;
@@ -57,8 +50,7 @@
     font-size: 30px;
   }
  
-  #main-bio,
-  #contact-info,
+  
   #bio-image{
     float: left;
   }
@@ -72,9 +64,7 @@
     font-size: 18px;
     margin-top: 40px;
     width: 960px;
-    float: left;
   }
-  
   #contact-info {
     width: 0;
   }
@@ -92,20 +82,10 @@
     background-color: #666666;
     color: #000;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   /* this is my conact page info css file bellow*/
-  /* 
-    #contact-page{
-      width: 960px;
-      margin: 0 auto;
-      margin-top:  40px;
-      background-color:#fff ;
-      padding: 20px;
-      border: #ccc 1px solid;
   
-    }
-    */
     #name,
     #email,
     #text-area,
@@ -113,13 +93,13 @@
         padding: 5px;
    
      } 
-      conact page h2 
+      
    h2 {
        color:#0AAE6D;
    }
    
    #submit {
-       background: #0AAE6D;
+      background: #0AAE6D;
       color: white;
       padding: 5px 20px 5px 20px;
       text-align: center;
