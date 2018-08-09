@@ -7,19 +7,32 @@
     color: #333;
     background-image: url(https://previews.123rf.com/images/ookasan/ookasan1605/ookasan160500391/57585899-white-concrete-wall-texture-ideal-for-home-vintage-old-.jpg);
   }
+  
   #section {
     padding-top: 20px;
-  }
+  } 
   #header {
     background-color: #ffffff;
     border: #cccccc;
     padding: 50px;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    border-bottom: #bbb 2px solid;
+    border-bottom: #ddd 3px solid;
+   }
+  a {
+    text-decoration: none;
+    color: #777;
+  }
+  
+  a:visited{
+    color: red;
+  }
+  a:hover{
+    color: blue;
+    text-decoration: underline;
   }
   #namediv {
     float: left;
-    margin-left: 240px;
+    margin-left: 16%;
     font-size: 30px;
     background-color: #4aaaa5;
   }
@@ -33,13 +46,13 @@
   }
   #contact{
     float: right;
-    margin-right: 250px;
+    margin-right: 16%;
   } 
  
   #h2 {
     color: #4aaaa5;
     font-size: 30px;
-    padding: 10px;
+
   }
   #bio-image{
     float: left;
@@ -49,11 +62,13 @@
     background-color:#ffffff;
     padding: 30px; 
     margin-bottom: 150px;
-    border: #dddddd 1px solid;
     font-size: 18px;
     margin-top: 40px; 
-    width: 960px;
+    max-width: 960px;
+    width: 80%;
     line-height: 40px;
+    border: #dddddd 3px solid;
+    color: #777;
   } 
   #bio-image {
     width: 200px;
@@ -81,8 +96,10 @@
    }
    /* portfolio page */
    #image {
-    width: 50%;
+    width: 48%;
+    
   }
+  
   #image1 {
     padding-right: 15px;
     padding-bottom: 25px;
