@@ -17,6 +17,8 @@
     padding: 50px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-bottom: #ddd 3px solid;
+    max-width: 100%;
+    widows: 50%;
    }
   a {
     text-decoration: none;
