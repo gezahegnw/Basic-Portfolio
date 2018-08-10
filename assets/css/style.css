@@ -14,11 +14,12 @@
   #header {
     background-color: #ffffff;
     border: #cccccc;
-    padding: 50px;
+    padding: 40px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-bottom: #ddd 3px solid;
     max-width: 100%;
     widows: 50%;
+    padding-bottom: 60px;
    }
   a {
     text-decoration: none;
@@ -37,6 +38,7 @@
     margin-left: 16%;
     font-size: 30px;
     background-color: #4aaaa5;
+    padding: 10px;
   }
   #about {
     float: right;
