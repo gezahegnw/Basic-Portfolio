@@ -1,133 +1,229 @@
 
   
-  body {
-    margin: auto;
+   body {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    line-height: 150%;
-    color: #333;
+    font-size: 18px;
+    line-height: 35px;
+    color: #777;
     background-image: url(https://previews.123rf.com/images/ookasan/ookasan1605/ookasan160500391/57585899-white-concrete-wall-texture-ideal-for-home-vintage-old-.jpg);
   }
-  
-  #section {
-    padding-top: 20px;
-  } 
-  #header {
-    background-color: #ffffff;
-    border: #cccccc;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    padding-bottom: 84px;
-    border-bottom:#999 2px solid;
-   }
-  a {
-    text-decoration: none;
-    color: #777;
+  * {
+    box-sizing: border-box;
   }
   
-  a:visited{
-    color: #ff0000;
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
   }
-  a:hover{
-    color: blue;
-    text-decoration: underline;
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 20px;
   }
-  #contact,
-  #folio,
-  #about {
-    padding-top: 25px;
+  
+  p:last-child {
+    margin-bottom: 0;
   }
- 
-  #namediv {
-    padding: 0;
-    margin: 0;
-    float: left;
-    margin-left: 18%;
-    font-size: 30px;
-    background-color: #4aaaa5;
-    border: #fff 2px solid;
-    padding: 25px;
-    padding-top: 25px;
-  }
-  #about {
-    float: right;
-    margin-right: 50px;
-  } 
-  #folio {
-    float:right;
-    margin-right: 50px;
-  }
-  #contact{
-    float: right;
-    margin-right: 18%;
-  } 
- 
-  #h2 {
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
     color: #4aaaa5;
+  }
+  
+  h1 {
+    padding-bottom: 20px;
     font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* header */
+  
+  #header{
+    position: fixed;
+    z-index: 99;
+    margin: 0 0 30px;
+    width: 100%;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  #logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+
+  nav {
+    float: right;
+    margin-top:  9px;
+    padding-top: 20px;
 
   }
-  #bio-image{
-    float: left;
+  
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+
+    font-size: 20px;
+  }
+  nav a:first-child {
+    border-left: 0 none;
   }
   
-  #container {
-    margin:  0 auto;
-    background-color:#ffffff;
-    padding: 30px; 
-    margin-bottom: 150px;
-    font-size: 18px;
-    margin-top: 30px; 
-    max-width: 960px;
-    width: 80%;
-    line-height: 40px;
-    border: #dddddd 3px solid;
-    color: #777;
-  } 
-  #bio-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 25px 25px 0; 
-  }
+  /* footer */
+  
   #footer {
+    padding: 30px 0 15px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
     position: fixed;
+    width: 100%;
     left: 0;
     bottom: 0;
+   
+  }
+  h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* main */
+  
+  #container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  #main-section {
+    float: left;
     width: 100%;
-    background-color: #666666;
-    color: #000;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* portfolio page */
+  
+  .image {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  .image:nth-child(even) {
+    margin-right: 40px;
+    margin-left: 30px;
+  }
+  .image img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .image h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    margin: auto;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  #bio-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* contact page */
+  
+  #contact-info ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
     display: block;
-    border-top: #4aaaa5 10px solid;
-     
-  }
- 
-  /* this is my conact page info css file bellow*/
-  
-   #submit {
-      background: #4aaaa5;
-      color: white;
-     text-align: center;
-   }
-   /* portfolio page */
-   #image {
-    width: 48%;
-    
+    width: 100%;
   }
   
-  #image1 {
-    padding-right: 15px;
-    padding-bottom: 25px;
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
   }
-  #image2 {
-    padding-left: 15px;
-    padding-bottom: 25px;
+  
+  textarea {
+    height: 200px;
   }
-  #image3 {
-    padding-right: 15px;
-    padding-bottom: 25px;
+  
+#submit{
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
   }
-  #image4 {
-    padding-left: 15px;
-    padding-bottom: 25px;
+  a{
+    text-decoration: none;
   }
+
+
+
+
+
+
